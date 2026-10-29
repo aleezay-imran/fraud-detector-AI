@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 import { AnalysisResult, AnalyzeRequest } from "@/lib/types";
 
+export const maxDuration = 60;
+
 const MODEL_ID = "gemma-4-26b-a4b-it";
 
 // Validate the structure returned by the AI model
